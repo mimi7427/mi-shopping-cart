@@ -8,6 +8,12 @@ body {
     gap: 50px;
   
 }
+h1{
+    color: rgba(7, 64, 71, 0.693);
+    font-weight: bold;
+
+}
+
 button:hover{
   background-color: #080808;
 }

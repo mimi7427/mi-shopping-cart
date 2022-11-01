@@ -6,7 +6,7 @@ export default function Header(props) {
       <div className='flexrow'>
       <div>
         <a href="#/">
-          <h1>Small Shopping Cart</h1>
+          <h1>Mimi's Car Shop</h1>
         </a>
       </div>
       <div>

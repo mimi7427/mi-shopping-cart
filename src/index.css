@@ -1,0 +1,79 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flexrow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+  
+}
+button:hover{
+  background-color: #080808;
+}
+.block.col-1{
+    width: 380px;
+}
+.col-1 {
+  flex: 1;
+  width: 300px;
+}
+.col-2 {
+  flex: 2;
+}
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  
+}
+.text-right {
+  text-align: right;
+}
+img.big{
+  height: 200px;
+  width: 250px;
+}
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(7, 64, 71, 0.693);
+  color: aliceblue;
+  border: none;
+  height: 30px;
+  width: 100px;
+}
+button.add {
+  background-color: rgb(40, 82, 40);
+  width: 1.5rem;
+  color: aliceblue;
+}
+button.remove {
+  background-color: blue;
+  width: 1.5rem;
+  color: aliceblue;
+}
+button.badge {
+  background-color: rgb(40, 82, 40);
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+.flexrow a{
+  color: black;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  height: 380px;
+}
+.container:hover{
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-top-color: rgb(201, 76, 76);
+  cursor: pointer;
+}
+.row{
+  text-align: center;
+}

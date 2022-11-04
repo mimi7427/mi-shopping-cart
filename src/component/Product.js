@@ -17,3 +17,21 @@ export default function Product(props) {
     </div>
   );
 }
+
+
+// const [products, setProducts] = useState({name:"",price:"",image:""});
+//     const [product, setProduct] = useState([ 
+
+
+// const changeProducts = (e)=>{
+//   setProducts({...products,[e.target.name]:e.target.value})
+// }
+//  const addProducts=()=>{
+//    setProduct([...product,products])
+//    setProducts({name:"",price:"",image:""})
+//  }
+
+
+
+
+// 

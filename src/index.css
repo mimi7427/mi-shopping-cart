@@ -6,12 +6,19 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 50px;
-  
+}
+.one{
+  gap: 30px;
 }
 h1{
     color: rgba(7, 64, 71, 0.693);
     font-weight: bold;
+    font-size: 30px;
+    margin-top: 1px;
 
+}
+header{
+  height: 20px;
 }
 
 button:hover{
@@ -49,7 +56,7 @@ button {
   color: aliceblue;
   border: none;
   height: 30px;
-  width: 100px;
+  width: 120px;
 }
 button.add {
   background-color: rgb(40, 82, 40);
@@ -83,3 +90,99 @@ button.badge {
 .row{
   text-align: center;
 }
+.cont{
+  background-color: #ffffff;
+  width: 600px;
+  height: 60vh;
+  box-shadow: 0 0 10px rgb(90, 89, 89);
+  border-radius: 5px;
+}
+.flex{
+  display: flex;
+}
+.flex button{
+  width: 30px;
+ background-color: rgb(161, 12, 12);
+ 
+}
+
+.cont1{
+  width: 200px;
+  margin: auto;
+  padding-top: 15px;
+}
+.cont1 button{
+  margin-left: 30px;
+}
+input{
+  width: 200px;
+  height: 30px;
+  margin:auto;
+}
+.footer{
+  background-color: rgba(7, 64, 71, 0.693);
+  height: 50px;
+  text-align: center;
+  
+}
+h6{
+  padding-top: 22px;
+  margin-top: 0px;
+  color: aliceblue;
+}
+.cardBox{
+  background-color: rgb(135, 179, 164);
+  width: 600px;
+  margin: auto;
+}
+.boxx{
+  background-color: rgb(131, 136, 136);
+}
+/* .boxx{
+  display: grid;
+  grid-template-columns: (3 1fr);
+  grid-template-rows: none;
+} */
+/* .cardBox{
+  display: flex;
+}  */
+.card-details{
+  margin-left: 70px;
+}
+
+.pic:hover{
+
+  box-shadow: 5px 5px 5px 5px #888888;
+  width: 570px;
+  /* margin-left: 60px; */
+  /* margin-left: 80px;  */
+}
+
+
+.cardBox img{
+  
+  margin-left: 50px; 
+  margin-top: 40px;
+  
+} 
+/* .card-details{
+  margin-left: 80px;
+} */  
+
+
+
+
+
+
+
+
+/* .navy li {
+  color: rgba(7, 64, 71, 0.693);
+
+}
+.navy{
+  display: flex;
+ 
+} */
+
+

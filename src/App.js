@@ -1,8 +1,12 @@
 import Header from './component/Header';
 import Main from './component/Main';
 import Basket from './component/Basket';
-import data from './data';
+import data from './component/Data';
 import { useState } from 'react';
+import { Routes, Route} from 'react-router-dom';
+import Form from './component/Form';
+import Footer from './component/Footer'
+
 
 function App() {
 
@@ -42,16 +46,28 @@ function App() {
   };
 
   return (
+
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
-      <div className="flexrow">
-        <Main products={products} onAdd={onAdd}></Main>
-        <Basket
-          cartItems={cartItems}
-          onAdd={onAdd}
-          onRemove={onRemove}
-        ></Basket>
-      </div>
+    
+
+    <Routes>
+       <Route path='/' element={ <Main products={products} onAdd={onAdd} /> }/>
+       <Route path='/Add' element={ <Form/> }/>
+       <Route path='/cart' element={ 
+       
+       <div className="flexrow">
+      
+      <Basket
+        cartItems={cartItems}
+        onAdd={onAdd}
+        onRemove={onRemove}
+      ></Basket>
+    </div> }/>
+
+    </Routes>
+    <Footer />
+      
     </div>
   );
 }

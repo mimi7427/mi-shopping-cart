@@ -1,25 +1,27 @@
+
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 export default function Header(props) {
   return (
     <header className="block row center">
       <div className='flexrow'>
       <div>
-        <a href="#/">
-          <h1>Mimi's Car Shop</h1>
-        </a>
+        
+          <Link to = "/"> <h1>Mimi's Car Shop</h1></Link>
+        
       </div>
-      <div>
-        <a href="#/cart">
+      <div className="one">
+         <Link to="/cart">
           Cart{' '}
           {props.countCartItems ? (
             <button className="badge">{props.countCartItems}</button>
           ) : (
             ''
           )}
-        </a>{' '}
-        <a href="#/signin"> SignIn</a>
-        <button onClick={props.Header}>AddNew</button>
+        </Link>{' '} 
+         {/* <a href="#/signin"> SignIn</a>  */}
+        <Link to ="/Add">AddNew</Link>
       </div>
       </div>
     </header>
